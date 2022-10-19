@@ -1,19 +1,12 @@
-import * as React from 'react'
+import React from 'react';
+// import React, {FC} from 'react';
 
 interface IProps {
   errorCode: number,
   msg: string,
 }
 
-// const Error = ({code,msg}: Props) => {
-//   return (
-//     <div>
-//       code {code}
-//     </div>
-
-//   )
-// };
-const Error: React.FC<IProps> = ({errorCode,msg}): JSX.Element =>{
+const Error: React.FC<IProps> = ({errorCode,msg})=>{
   return (<>
     Code {errorCode}
     Msg {msg}

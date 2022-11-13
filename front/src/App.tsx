@@ -8,8 +8,8 @@ return (
     <Router>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/Add" element={<AddPage/>} />
-        <Route path="/Settings" element={<Settings/>} />
+        <Route path="/add" element={<AddPage/>} />
+        <Route path="/settings" element={<Settings/>} />
         <Route path="*" element={<Error errorCode={404} msg="Page Not Found"/>} />
       </Routes>
     </Router>

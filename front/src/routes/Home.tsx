@@ -1,7 +1,7 @@
 import Header from "../components/Header"
 const Home = () => {
   return (
-    <div>
+    <div className="flex flex-col min-h-screen">
       <Header/>
     </div>
 

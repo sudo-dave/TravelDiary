@@ -4,13 +4,15 @@ import { IconContext } from "react-icons";
 const Header = () => {
   return (
     <div className="bg-indigo-500 font-logo-main flex p-10 justify-between">
-    <IconContext.Provider value={{ color: "black", size: "2.2rem" }}>
-      <a className="hover:text-red-50" href="/settings">
-      <BsGear/>
+    <IconContext.Provider value={{size: "2.5rem" }}>
+      <a className="" href="/settings">
+      <BsGear className=" text-black hover:text-gray-400"/>
       </a>
-      <h1 className="text-white text-5xl">WonderLust</h1>
+      <a href="/">
+      <h1 className="text-white text-5xl hover:text-gray-400">Wonderlust</h1>
+      </a>
       <a href="/add">
-      <BsFillPlusCircleFill/>
+      <BsFillPlusCircleFill className="text-black hover:text-gray-400"/>
       </a>
     </IconContext.Provider>
     </div>

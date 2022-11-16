@@ -4,18 +4,25 @@ interface IProps {
 //   msg: string,
     userId: number,
     id: number,
-    date: string
+    date: string,
+    location: string,
     title: string,
     body: string,
+    url: string
 
 }
 
-const Post: React.FC<IProps> = ({userId,id,date,title,body})=>{
+const Post: React.FC<IProps> = ({userId,id,url,location,date,title,body})=>{
   return (<div>
-    <h2 className="capitalize text-center my-4">
-       <span>Date:{date} </span> {title}
+    <div className="text-center my-5">
+    <h2 className="text-4xl font-title-header my-4">
+      {title}
     </h2>
-    <p>
+    <h3 className="text-xl body-main underline">
+      {date} | {location}
+    </h3>
+    </div>
+    <p className="text-2xl font-body-main">
         {body}
     </p>
   </div>

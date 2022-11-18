@@ -1,4 +1,5 @@
-
+import { AiFillEdit } from "react-icons/ai";
+import {BsFillTrashFill} from "react-icons/bs"
 interface IProps {
 //   errorCode: number,
 //   msg: string,
@@ -9,9 +10,7 @@ interface IProps {
     title: string,
     body: string,
     url: string
-
 }
-
 const Post: React.FC<IProps> = ({userId,id,url,location,date,title,body})=>{
   return (<div>
     <div className="text-center my-5">
@@ -22,12 +21,21 @@ const Post: React.FC<IProps> = ({userId,id,url,location,date,title,body})=>{
       {date} | {location}
     </h3>
     </div>
+    <div className="bg-green-300 flex justify-center gap-x-28 mb-7">
+    <button className="rounded-full bg-white p-3">
+      <AiFillEdit/>
+    </button>
+    <button className="rounded-full bg-white p-3">
+      <BsFillTrashFill/>
+    </button>
+    </div>
+
     <p className="text-2xl font-body-main">
         {body}
     </p>
+
     <div className="flex justify-center mt-10">
       <img src={url} className="h-auto w-auto max-w-screen-md"/>
-      {/* <img src={url} className="block text-center"/> */}
     </div>
   </div>
   )

@@ -22,10 +22,10 @@ const Post: React.FC<IProps> = ({userId,id,url,location,date,title,body})=>{
     </h3>
     </div>
     <div className="bg-green-300 flex justify-center gap-x-28 mb-7">
-    <button className="rounded-full bg-white p-3">
+    <button className="rounded-full bg-white hover:bg-gray-300 p-3">
       <AiFillEdit/>
     </button>
-    <button className="rounded-full bg-white p-3">
+    <button className="rounded-full bg-white hover:bg-gray-300 p-3">
       <BsFillTrashFill/>
     </button>
     </div>

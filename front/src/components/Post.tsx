@@ -12,6 +12,12 @@ interface IProps {
     url: string
 }
 const Post: React.FC<IProps> = ({userId,id,url,location,date,title,body})=>{
+
+  const deltePost = () =>{
+    var procced = confirm("Do you want to delete post");
+    if (!procced) return 
+    alert("Post delted");
+  } 
   return (<div>
     <div className="text-center my-5">
     <h2 className="text-4xl font-title-header my-4">
@@ -25,7 +31,7 @@ const Post: React.FC<IProps> = ({userId,id,url,location,date,title,body})=>{
     <button className="rounded-full bg-white hover:bg-gray-300 p-3">
       <AiFillEdit/>
     </button>
-    <button className="rounded-full bg-white hover:bg-gray-300 p-3">
+    <button onClick={deltePost} className="rounded-full bg-white hover:bg-gray-300 p-3">
       <BsFillTrashFill/>
     </button>
     </div>

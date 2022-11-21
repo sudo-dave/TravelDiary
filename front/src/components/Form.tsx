@@ -9,26 +9,26 @@ const Form = () => {
     }
 
   return (
-    <form className="bg-red-100 p-24 text-center" onSubmit={onSubmit}>
+    <form className="bg-red-100 p-5 text-center" onSubmit={onSubmit}>
         <div className="bg-yellow-100">
-            <label className="block" htmlFor="title">Title</label>
-            <input className="w-full" id="title"  />
+            <label className="block font-bold text-3xl font-title-header" htmlFor="title">~Title~</label>
+            <input className="w-full my-4 p-2" id="title"  />
         </div>
         <div className="bg-yellow-100">
-            <label className="block" htmlFor="location">Location</label>
+            <label className="block font-bold text-3xl font-title-header" htmlFor="location">~Location~</label>
             <button type="button" onClick={getLocation}
-            className="bg-green-300">Get Location</button>
-            <input id="location" className="w-1/3"/>
+            className="bg-green-300 my-4 p-2">Get Location</button>
+            <input id="location" className="w-1/2 p-2"/>
         </div>
         <div className="bg-yellow-100">
-            <label className="block" htmlFor="image">Image</label>
-            <input id="image" type="file"/>
+            <label className="block font-bold text-3xl font-title-header" htmlFor="image">~Imager~</label>
+            <input id="image" className="my-4 bg-gray-200" type="file"/>
         </div>
         <div className="bg-yellow-100">
-            <label className="block" htmlFor="body">Body</label>
-            <textarea className="w-full"id="body"></textarea>
+            <label className="block font-bold text-3xl font-title-header" htmlFor="body">~Body~</label>
+            <textarea  rows={15} className="w-full my-4 p-2"id="body"></textarea>
         </div>
-        <button className="bg-red-400" type="submit">Sign up</button>
+        <button className="bg-red-400" type="submit">Post</button>
     </form>
   )
 }

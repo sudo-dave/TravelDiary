@@ -2,7 +2,7 @@
 
 const Form = () => {
     const onSubmit = () => {
-        alert("hi how are u")
+        alert("hi how are u");
     };
     const getLocation = () =>{
         alert("yoo")

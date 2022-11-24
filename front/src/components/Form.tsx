@@ -1,8 +1,25 @@
+import { FormEvent, useState } from "react";
 
 
+// https://claritydev.net/blog/typescript-typing-form-events-in-react/
+
+// https://www.pluralsight.com/guides/how-to-use-a-simple-form-submit-with-files-in-react
+interface UserFormState {
+    name: string,
+    location: string,
+    body: string
+}
 const Form = () => {
-    const onSubmit = () => {
-        alert("hi how are u")
+
+    const [userForm,setUserForm] = useState<UserFormState>({
+        name: "",
+        location: "",
+        body: ""
+    })
+    
+    const onSubmit = (event: FormEvent<HTMLFormElement>) => {
+        event.preventDefault();
+        alert("the thign");
     };
     const getLocation = () =>{
         alert("yoo")

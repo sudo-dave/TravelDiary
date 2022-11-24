@@ -14,7 +14,7 @@ interface IProps {
 const Post: React.FC<IProps> = ({userId,id,url,location,date,title,body})=>{
 
   const deltePost = () =>{
-    var procced = confirm("Do you want to delete post");
+    const procced = confirm("Do you want to delete post");
     if (!procced) return 
     alert("Post delted");
   } 

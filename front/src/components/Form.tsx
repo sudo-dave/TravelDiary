@@ -10,6 +10,7 @@ interface UserFormState {
     body: string
 }
 const Form = () => {
+    const onSubmit = () => {
 
     const [userForm,setUserForm] = useState<UserFormState>({
         name: "",

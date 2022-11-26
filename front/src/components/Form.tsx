@@ -1,15 +1,9 @@
 import { useState, FormEvent, ChangeEvent } from "react";
-
-interface UserFormState {
-    title: string,
-    location: string,
-    body: string,
-    tags: string[]
-}
+import { IUserFormState } from "../types";
 
 const Form = () => {
 
-    const [userForm, setUserForm] = useState<UserFormState>({
+    const [userForm, setUserForm] = useState<IUserFormState>({
         title: "",
         location: "",
         body: "",

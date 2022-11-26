@@ -1,12 +1,11 @@
 import React from 'react';
-// import React, {FC} from 'react';
 
 interface IProps {
   errorCode: number,
   msg: string,
 }
 
-const Error: React.FC<IProps> = ({errorCode,msg})=>{
+const Error = ({errorCode,msg}: IProps)=>{
   return (<>
     Code {errorCode}
     Msg {msg}

@@ -1,17 +1,8 @@
 import { AiFillEdit } from "react-icons/ai";
 import {BsFillTrashFill} from "react-icons/bs"
-interface IProps {
-//   errorCode: number,
-//   msg: string,
-    userId: number,
-    id: number,
-    date: string,
-    location: string,
-    title: string,
-    body: string,
-    url: string
-}
-const Post: React.FC<IProps> = ({userId,id,url,location,date,title,body})=>{
+import { IPost } from "../types";
+
+const Post = ({userId,id,url,location,date,title,body}: IPost)=>{
 
   const deltePost = () =>{
     const procced = confirm("Do you want to delete post");

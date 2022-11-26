@@ -1,8 +1,8 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Home from "./routes/Home";
-import Error from "./routes/Error";
-import AddPage from "./routes/AddPage";
-import Settings from "./routes/Settings";
+import Home from "./pages/Home";
+import Error from "./pages/Error";
+import AddPage from "./pages/AddPage";
+import Settings from "./pages/Settings";
 const App = () => {
 return (
     <Router>

@@ -1,6 +1,5 @@
 import Header from "../components/Header"
 import Post from "../components/Post"
-
 // test
 // https://jsonplaceholder.typicode.com/posts
 const Home = () => {
@@ -16,11 +15,7 @@ const Home = () => {
       "nisi nihil molestiae ut reiciendis\nqui aperiam non debitis possimus qui neque" +
       "nisi  molestiae ut reiciendis\nqui aperiam non debitis possimus qui neque nisi"}/>
       </div>
-     
-     
     </div>
-
-
   )
 }
 export default Home

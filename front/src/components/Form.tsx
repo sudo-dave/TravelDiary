@@ -38,6 +38,7 @@ const Form = () => {
             <label className="block font-bold text-3xl font-title-header" htmlFor="image">~Image~</label>
             <input id="image" className="my-4 bg-gray-200" type="file"/>
         </div>
+
         <div className="bg-yellow-100">
             <label className="block font-bold text-3xl font-title-header" htmlFor="body">~Body~</label>
             <textarea rows={15} className="w-full my-4 p-2"id="body" onChange={onFieldChange} ></textarea>

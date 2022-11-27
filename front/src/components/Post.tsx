@@ -2,7 +2,7 @@ import { AiFillEdit } from "react-icons/ai";
 import {BsFillTrashFill} from "react-icons/bs"
 import { IPost } from "../types";
 
-const Post = ({userId,id,url,location,date,title,body}: IPost)=>{
+const Post = ({url,location,date,title,body}: IPost)=>{
 
   const deltePost = () =>{
     const procced = confirm("Do you want to delete post");

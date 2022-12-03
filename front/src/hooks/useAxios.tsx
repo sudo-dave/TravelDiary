@@ -1,7 +1,9 @@
 import { useState, useEffect } from "react"
 import axios, {AxiosResponse, AxiosError, AxiosRequestConfig} from "axios"
+import Config from "../../config"
 
-axios.defaults.baseURL = 'http://localhost:3000'
+axios.defaults.baseURL = Config["backendURl"];
+
 const useAxios = (axiosParams: AxiosRequestConfig) =>{
 
     const [response, setResponse] = useState<any>();

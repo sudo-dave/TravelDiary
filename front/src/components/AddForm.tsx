@@ -1,7 +1,7 @@
 import { useState, FormEvent, ChangeEvent } from "react";
 import { IUserFormState } from "../types";
 
-const Form = () => {
+const AddForm= () => {
 
     const [userForm, setUserForm] = useState<IUserFormState>({
         title: "",
@@ -36,7 +36,7 @@ const Form = () => {
         </div>
         <div className="bg-yellow-100">
             <label className="block font-bold text-3xl font-title-header" htmlFor="image">~Image~</label>
-            <input id="image" className="my-4 bg-gray-200" type="file"/>
+            <input id="image" className="my-4 bg-gray-200" accept="image/png, image/jpeg" type="file"/>
         </div>
 
         <div className="bg-yellow-100">
@@ -48,4 +48,4 @@ const Form = () => {
     )
 }
 
-export default Form
+export default AddForm

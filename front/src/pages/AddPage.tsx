@@ -1,10 +1,10 @@
 import Header from '../components/Header'
-import Form from '../components/Form'
+import AddForm from '../components/AddForm'
 const AddPage = () => {
   return (
     <div>
     <Header/>
-    <Form/>
+    <AddForm/>
     </div>
   )
 }

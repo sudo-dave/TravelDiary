@@ -8,3 +8,5 @@
 - Finish settings page; add session storage option for pots
 - Finish responsiveness for UI
 - Create api hook for the backned
+- add loading screens; skelton scree while loading posts \*\*
+- add cases for Error

@@ -22,6 +22,8 @@ const Home = () => {
         location={location} title={title} body={body}
         url={url} />))
       }
+      {error && "ERROR"}
+      {loading && "loading"}
       </div>
     </div>
   )
